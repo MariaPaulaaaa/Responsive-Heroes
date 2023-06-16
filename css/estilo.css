@@ -64,7 +64,32 @@ h1 {
     padding: 3%;
 }
 
-input, textarea {
+.PrimCol textarea {
+    margin-top: 30px;
+}
+
+.PrimCol input {
+    margin-bottom: 30px;
+}
+
+.SegCol select {
+    margin-bottom: 38px;
+}
+
+.poderes, .personaje {
+    display: flex;
+    flex-direction: column;
+}
+
+.poderes label, .personaje label {
+    margin-top: 5px;
+}
+
+.poderes legend, .personaje legend {
+    margin-top: 30px;
+}
+
+input, textarea, select {
   width: 100%;
   padding: 2.6%;
   border-radius: 10px;

@@ -52,13 +52,13 @@
                         placeholder="dd/mm/aaaa"
                       />
             
-                    <label for="descripcion"> Descripción </label>
-                      <textarea
+                    <textarea
                         name="descripcion"
                         id="descripcion"
+                        placeholder="Descripción"
                         cols="30"
-                        rows="5"
-                      ></textarea>
+                        rows="10"
+                    ></textarea>
                 </section>
             
                 <section class="SegCol">
@@ -75,8 +75,9 @@
                         accept=".jpeg, .pdf"
                         multiple
                       />
-            
-                    <legend> Poderes </legend>
+                    
+                    <div class="poderes">
+                        <legend> Poderes </legend>
                       <label for="Volar">
                         <input type="checkbox" name="lenguajes" id="Volar" value="Volar" />
                         Volar
@@ -93,8 +94,10 @@
                         <input type="checkbox" name="lenguajes" id="Billetera gorda" value="Billetera gorda" />
                         Billetera gorda
                       </label>
-            
-                    <legend> Tipo de personaje </legend>
+                    </div>
+                    
+                    <div class="personaje">
+                      <legend> Tipo de personaje </legend>
                       <label for="HéroeHeroína">
                         <input type="radio" name="lenguajes" id="HéroeHeroína" value="HéroeHeroína" />
                         Héroe / Heroína
@@ -103,6 +106,7 @@
                         <input type="radio" name="lenguajes" id="VillanoVillana" value="VillanoVillana" />
                         Villano / Villana
                       </label>
+                    </div>
                 </section>
             </article>
 
