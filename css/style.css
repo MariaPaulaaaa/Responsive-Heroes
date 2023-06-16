@@ -137,4 +137,10 @@ footer {
     .BotonMas {
         margin-bottom: 5vh;
     }
+
+    header {
+        width: 100%;
+        padding: 0.3% 0.5%; 
+        background-color: #1CD1B0;
+    }
 }
