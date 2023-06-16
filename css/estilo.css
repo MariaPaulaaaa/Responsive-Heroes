@@ -1,64 +1,96 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
-body {
-  background-color: #17a2b8;
-  color: #17a2b8;
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
+* {
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
 }
 
-.login {
-  background-color: #f4f2f2;
-  border: 1px solid #9c9c9c;
+.inicio {
+    width: 100%;
+    padding: 0.04% 1%; 
+    background-color: #1CD1B0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.Principal {
+    display: flex;
+    align-items: center;
+    font-size: large;
+    width: 100%;
+    padding: 1%;
+    background: #00669F;
+    color: white;
+    text-align: center;
+    margin-right: 5vw;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+.Navegacion {
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    color: white;
+    padding: 0.6%;
+    gap: 10px;
+}
+
+main {
+    background-color: #00669F;
+    border-radius: 20px;
+    padding: 2%;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    gap: 10px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.Info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 40px;
+    padding: 3%;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 2.6%;
   border-radius: 10px;
-  margin: 5% auto;
-  max-width: 400px;
-  padding: 20px;
+  border: white;
 }
 
-.login h3 {
-  text-align: center;
-}
-
-form input,
-form textarea {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 100%;
-}
-
-.buttons-container {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-}
-
-input[type="submit"],
-input[type="reset"] {
+input[type="add"] {
   border: none;
-  color: #fff;
-  width: unset;
-  background: linear-gradient(to right, #ad17b8, #319fae);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-  padding: 10px 20px;
-  font-size: 16px;
+  color: black;
+  font-size: large;
+  background-color: #1CD1B0;
+  padding: 10px 50px;
+  width: 40%;
   font-weight: bold;
-  color: #fff;
   text-align: center;
   text-decoration: none;
   transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-input[type="submit"]:hover,
-input[type="reset"]:hover {
+input[type="add"]:hover {
   background: linear-gradient(to right, #319fae, #ad17b8);
   transform: scale(1.05);
   cursor: pointer;
 }
 
-input[type="submit"]:active,
-input[type="reset"]:active {
+input[type="add"]:active {
   background: linear-gradient(to right, #319fae, #ad17b8);
   transform: scale(0.95);
 }
@@ -74,10 +106,24 @@ input[type="checkbox"] {
   width: 10px;
 }
 
-.vert {
-  display: block;
-}
-
 input:required ~ label::before {
   content: none !important;
+}
+
+footer {
+    color: white;
+    background-color: #00669F;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    padding: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    .GeneralContainer {
+        flex-wrap: wrap;
+        margin-top: 5vh;
+    }
 }
