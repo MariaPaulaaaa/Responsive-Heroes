@@ -4,9 +4,9 @@
     margin: 0;
 }
 
-header {
+.inicio {
     width: 100%;
-    padding: 0.002% 0.5%; 
+    padding: 0.04% 1%; 
     background-color: #1CD1B0;
 }
 
@@ -15,10 +15,17 @@ main {
     flex-direction: column;
 }
 
+.Navegacion {
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    color: white;
+    padding: 0.6%;
+    gap: 10px;
+}
+
 .Principal {
-    position: sticky;
-    top: 2px;
-    z-index: 10;
+    display: flex;
     font-size: large;
     width: 100%;
     padding: 3%;

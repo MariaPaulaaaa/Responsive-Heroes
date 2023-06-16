@@ -147,8 +147,7 @@ footer {
 }
 
 @media screen and (max-width: 768px){
-    .GeneralContainer {
-        flex-wrap: wrap;
-        margin-top: 5vh;
+    .Info {
+        flex-direction: column;
     }
 }
